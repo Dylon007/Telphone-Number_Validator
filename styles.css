@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #000000;
+  font-family: Monospace;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  width: 500px;
+  text-align: center;
+  font-style: strong;
+  font-size: 2.5em;
+}
+
+#phone-case {
+  width: 300px;
+  height: 80vh;
+  border-radius: 40px;
+  border: solid red 5px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding-top: 10px;
+}
+
+#top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 5px;
+}
+
+.camera {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.speaker {
+  width: 60px;
+  height: 8px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.content {
+  flex: 1;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(253, 253, 253);
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+#bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.home-button {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+
+#phone-screen {
+  background: red;
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#user-input {
+  align-self: center;
+  width: 85%;
+  height: 3em;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#results-div {
+  width: 80%;
+  align-self: center;
+  text-align: center;
+}
+
+#btn-holder {
+  flex-grow: 2;
+  margin: 10px;
+}
+
+.btn {
+  font-size: 1.3em;
+  margin: 0 15px;
+  width: 100px;
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 19px;
+  cursor: pointer;
+  padding: 4px 15px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  background: 
+    linear-gradient(top,#f8f8f8,#f1f1f1);
+    border: 1px solid #e6e6e6;
+    color: #666;
+    text-decoration: none;
+}
+
+.btn:active {
+  background: -webkit-linear-gradient(top,#eee,#e0e0e0);
+  border: 1px solid #d7d7d7;
+  box-shadow: inset 0 1px 2px 0 rgba(207, 32, 32, 0.1);
+}
+
+@media (min-height: 360px) {
+  img {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+}
